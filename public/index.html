@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f0e8">
+    <title>Fieldnote | Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <main class="shell">
+        <nav class="nav">
+            <a class="brand" href="/" aria-label="Fieldnote home"><span class="brand-mark">F</span> fieldnote</a>
+            <span class="secure-label"><span class="lock">&#128274;</span> Secure checkout</span>
+        </nav>
+
+        <section class="checkout-layout">
+            <div class="intro">
+                <p class="eyebrow">FIELDNOTE / 01</p>
+                <h1>Make room for<br><em>better work.</em></h1>
+                <p class="lede">A focused, practical course for turning scattered ideas into a system you can actually use.</p>
+                <div class="trust-row"><span class="avatars"><i>AK</i><i>RM</i><i>JP</i></span><span>Joined by 2,400+ curious builders</span></div>
+            </div>
+
+            <form class="payment-card" id="payment-form">
+                <div class="card-heading"><div><p class="eyebrow">YOUR ENROLLMENT</p><h2>Complete your order</h2></div><span class="step">01 / 01</span></div>
+                <div class="product"><div class="product-icon">✦</div><div><strong>Fieldnote Fundamentals</strong><span>Lifetime access · Self-paced</span></div><strong class="price">₹499</strong></div>
+                <div class="form-fields">
+                    <label for="name">Full name<input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required></label>
+                    <label for="email">Email address<input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></label>
+                </div>
+                <button class="pay-button" id="pay-button" type="submit"><span>Continue to payment</span><span class="arrow">↗</span></button>
+                <p class="fine-print">Payments are processed securely by Razorpay. By continuing, you agree to our terms.</p>
+                <p class="status" id="status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+        <footer><span>FIELDNOTE © 2026</span><span>Thoughtful tools for focused people</span><span>IN / EN</span></footer>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>
